@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Dogs</title>
+</head>
+<body>
+    <%- include('blocks/header') -%>
+    <div class="posts">
+        <div class="post">
+            <div class="picture">
+                <img src=<%= post_1[0] %> alt="">
+            </div>
+            <form onsubmit="stopreload(this)" action="/like/post/400" method="post">
+                <button class="like" type="submit" onclick="this.style.backgroundColor = 'pink';" style="transition: background-color 0.5s;">Like <span><%= post_1[1] %></span>💕</button>
+            </form>
+        </div>
+        <div class="post">
+            <div class="picture">
+                <img src=<%= post_2[0] %> alt="">
+            </div>
+            <form onsubmit="stopreload(this)" action="/like/post/201" method="post">
+                <button class="like" type="submit" onclick="this.style.backgroundColor = 'pink';" style="transition: background-color 0.5s;">Like <span><%= post_2[1] %></span>💕</button>
+            </form>
+        </div>
+        <div class="post">
+            <div class="picture">
+                <img src=<%= post_3[0] %> alt="">
+            </div>
+            <form onsubmit="stopreload(this)" action="/like/post/205" method="post">
+                <button class="like" type="submit" onclick="this.style.backgroundColor = 'pink';" style="transition: background-color 0.5s;">Like <span><%= post_3[1] %></span>💕</button>
+            </form>
+        </div>
+        <div class="post">
+            <div class="picture">
+                <img src=<%= post_4[0] %> alt="">
+            </div>
+            <form onsubmit="stopreload(this)" action="/like/post/404" method="post">
+                <button class="like" type="submit" onclick="this.style.backgroundColor = 'pink';" style="transition: background-color 0.5s;">Like <span><%= post_4[1] %></span>💕</button>
+            </form>
+        </div>
+        <div class="post">
+            <div class="picture">
+                <img src="<%= post_5[0] %>">
+            </div>
+            <form onsubmit="stopreload(this)" action="/like/post/500" method="post">
+                <button class="like" type="submit" onclick="this.style.backgroundColor = 'pink';" style="transition: background-color 0.5s;">Like <span><%= post_5[1] %></span>💕</button>
+            </form>
+        </div>
+        <div class="post">
+            <div class="picture">
+                <img src=<%= post_6[0] %> alt="">
+            </div>
+            <form onsubmit="stopreload(this)" action="/like/post/510" method="post">
+                <button class="like" type="submit" onclick="this.style.backgroundColor = 'pink';" style="transition: background-color 0.5s;">Like <span><%= post_6[1] %></span>💕</button>
+            </form>
+        </div>
+        <div class="post">
+            <div class="picture">
+                <img src=<%= post_7[0] %> alt="">
+            </div>
+            <form onsubmit="stopreload(this)" action="/like/post/506" method="post">
+                <button class="like" type="submit" onclick="this.style.backgroundColor = 'pink';" style="transition: background-color 0.5s;">Like <span><%= post_7[1] %></span>💕</button>
+            </form>
+        </div>
+        <div class="post">
+            <div class="picture">
+                <img src="<%= post_8[0] %>" alt="">
+            </div>
+            <form onsubmit="stopreload(this)" action="/like/post/450" method="post">
+                <button class="like" type="submit" onclick="this.style.backgroundColor = 'pink';" style="transition: background-color 0.5s;">Like <span><%= post_8[1] %></span>💕</button>
+            </form>
+        </div>
+        </div>
+
+
+      
+    </div>
+
+
+
+    <script src="/js/index.js"> </script>
+</body>
+</html>

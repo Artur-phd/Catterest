@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    background-color: rgb(148, 148, 148);
+}
+
+
+/* header */
+header{
+    text-align: center;
+    background-color: rgb(36, 34, 34);
+    border-radius: 8px;
+    padding: 20px
+}
+
+a{
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.8s;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+a:hover{
+    color: rgb(56, 179, 196);
+    transition: 0.8s;
+}
+a:active{
+    color: aqua;
+    transition: 0s;
+}
+
+
+
+/* POSTS */
+
+.posts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.post{
+    padding: 2px;
+    margin: 10px;
+    flex: 40px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    
+
+}
+
+img{
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+button{
+    color: black;
+    background-color: rgb(187, 176, 176);
+    text-decoration: none;
+    border: none;
+    padding: 7px;
+    border-radius: 8px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    
+
+}
+button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    transition: 0.8s;
+}
+
+button:active{
+    color: black;
+    background-color: rgb(255, 72, 72);
+    transition: 0s;
+}
+button.liked{
+    background-color: rgb(255, 105, 130);
+}
+
+
+span{
+    color: red;
+}
